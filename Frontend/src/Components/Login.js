@@ -17,7 +17,7 @@ export default function Login() {
         updateloading(true);
         changeprogress(30);
         e.preventDefault();
-        const url = "https://inotebookbackendapp.herokuapp.com/api/auth/login";
+        const url = YOUR_BACKEND_URL + "/api/auth/login";
         try {
             const response = await fetch(url, {
                 method: 'POST',
