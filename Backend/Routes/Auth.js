@@ -5,7 +5,7 @@ const router = express.Router();
 const { body, validationResult } = require('express-validator');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const JWTSecret = '@#$!(jt8D%FdFDdj8?::"hn@jfd8(*';
+const JWTSecret = PUT_YOUR_SECRET_HERE;
 const fetchUserId = require('../Middleware/fetchUserId');
 router.post('/createuser', [body('email', 'Enter a valid email').isEmail(), body('username', 'Username must be atleast 3 characters long').isLength({ min: 3 }), body('name', 'Name must be atleast 3 characters long').isLength({ min: 3 }), body('password', ' Password must be atleast 5 characters long').isLength({ min: 5 })],
     async (req, res) => {
