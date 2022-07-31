@@ -23,7 +23,7 @@ export default function Signup() {
         }
         updateloading(true);
         changeprogress(30);
-        const url = "https://inotebookbackendapp.herokuapp.com/api/auth/createuser";
+        const url = YOUR_BACKEND_URL + "/api/auth/createuser";
         try {
             const response = await fetch(url, {
                 method: 'POST',
