@@ -7,7 +7,7 @@ export default function NotesStates(props) {
   const { showAlert } = context;
   const context1 = useContext(ProgressContext);
   const { changeprogress, updateloading } = context1;
-  const hostname = "https://inotebookbackendapp.herokuapp.com";
+  const hostname = YOUR_BACKEND_APP_URL;
   const [notes, setnotes] = useState([]);
   const getNotes = async () => {
     //API
