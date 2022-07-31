@@ -16,7 +16,7 @@ export default function Account() {
     useEffect(() => {
         const fetchuser = async () => {
             updateloading(true);
-            const url = "https://inotebookbackendapp.herokuapp.com/api/auth/getuser";
+            const url = YOUR_BACKEND_URL + "/api/auth/getuser";
             changeprogress(30);
             try {
                 const response = await fetch(url, {
