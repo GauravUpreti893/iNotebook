@@ -1,0 +1,54 @@
+#landing::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -2;
+    background: url(./landingpagebackground.webp) no-repeat center center/cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+
+#landing {
+    height: 55vh;
+    color: white;
+    text-align: center;
+}
+
+#first {
+    font-size: 60px;
+    font-weight: 1000;
+    margin-bottom: 0.1rem;
+    background: -webkit-linear-gradient(cyan, blue, magenta, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#second {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+
+#third {
+    font-size: 25px;
+    font-weight: 700;
+    color: wheat;
+}
+
+@media only screen and (max-width: 500px) {
+    #landing::before {
+        height: 100vh !important;
+    }
+
+    #landing {
+        margin-bottom: 3.7rem !important;
+    }
+}

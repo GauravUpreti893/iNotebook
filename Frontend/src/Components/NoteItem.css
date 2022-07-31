@@ -1,0 +1,57 @@
+#enlarge {
+    color: white;
+    transform: scale(1.3);
+    margin-left: 6px;
+}
+
+#end {
+    padding-left: 10px;
+    position: absolute;
+    right: 5px;
+    height: 100%;
+}
+
+#tagcontainer {
+    background-image: linear-gradient(to right, orange, rgb(255, 89, 0));
+}
+
+#notetitle {
+    padding: 3px 0px !important;
+    position: relative;
+    top: 0.53rem;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+#notedescription {
+    padding: 3px 0px !important;
+    position: relative;
+    top: 0.53rem;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#notedate {
+    color: rgb(243, 226, 194);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#notebox {
+    box-shadow: 3px 3px 5px rgb(255, 230, 0);
+    background-image: linear-gradient(rgb(196, 58, 243), magenta, rgb(251, 120, 251));
+}
+
+#notebox:hover,
+#notebox:active {
+    box-shadow: -4px -4px 4px cyan, 4px 4px 4px yellow;
+}

@@ -1,0 +1,90 @@
+#logincontainer {
+    display: flex;
+    height: 60vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: white;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+#logincontainer::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -2;
+    background: url(./landingpagebackground.webp) no-repeat center center/cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+
+#loginbox {
+    margin-top: 0.3rem;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px white;
+    z-index: 134;
+}
+
+#subbutton {
+    margin-top: 0.8rem;
+    width: 100%;
+    border-radius: 20px !important;
+}
+
+input {
+    background-color: #E8F0FE !important;
+}
+
+@media only screen and (max-width: 500px) {
+    #logincontainer::before {
+        min-height: 52.35rem !important;
+    }
+
+    #logincontainer {
+        position: relative;
+        height: 40rem;
+        left: 0;
+        right: 0;
+        top: -3.15rem;
+        padding-top: -12rem;
+        margin-bottom: 5.7rem;
+        margin-top: 0;
+    }
+
+    h2 {
+        position: relative;
+        top: -5.3rem;
+    }
+
+    #loginform {
+        margin-top: -5rem;
+    }
+
+    #logincontainer.active::before {
+        min-height: 200vh !important;
+    }
+
+    #logincontainer.active {
+        margin-bottom: 0;
+        padding-top: 0;
+        min-height: 120vh !important;
+    }
+}

@@ -1,0 +1,70 @@
+#enotetitle {
+    padding-top: 15px !important;
+    padding-bottom: 1rem !important;
+    position: relative;
+    top: 0.53rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+#enotedescription {
+    padding: 3px 0px !important;
+    position: relative;
+    top: 0.53rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#enotedate {
+    color: rgb(243, 226, 194);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#ecardid {
+    background-image: linear-gradient(magenta, blue);
+    color: 'white';
+    max-width: 40%;
+    height: auto;
+    margin-top: 2.7rem !important;
+    margin-bottom: 3.7rem !important;
+}
+
+#wrongicon {
+    position: absolute;
+    top: 1rem;
+    right: 1.2rem;
+}
+
+#xicon {
+    font-size: 1.8rem;
+}
+
+#enlargecontainer {
+    background-image: linear-gradient(to right, magenta, #0096FF);
+    color: white;
+}
+
+#tagcontainerenlarge {
+    background-image: linear-gradient(to right, orange, rgb(255, 89, 0));
+}
+
+@media only screen and (max-width:996px) {
+    #ecardid {
+        max-width: 80%;
+    }
+
+    #wrongicon {
+        top: 0.6rem;
+        right: 0.6rem;
+    }
+}

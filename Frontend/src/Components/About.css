@@ -1,0 +1,42 @@
+#big::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -3.18rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -2;
+    background: url(./landingpagebackground.webp) no-repeat center center/cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+
+img,
+#xy {
+    opacity: 0.82;
+}
+
+#big {
+    position: relative;
+}
+
+@media only screen and (max-width:996px) {
+    #big {
+        padding-bottom: 4px !important;
+    }
+
+    #aboutcontainer {
+        flex-direction: column !important;
+        align-items: center;
+        margin-bottom: 1rem !important;
+    }
+
+    #aboutcontainer img {
+        width: 74vw !important;
+    }
+}
